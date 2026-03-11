@@ -1,0 +1,31 @@
+RANDOM FOREST METRICS
+==================================================
+Dataset: PJME_hourly.csv
+
+Training Samples: 116,289
+Test Samples: 29,073
+Features: 5
+
+Train MAE: 2388.71
+Test MAE: 3042.43
+Train RMSE: 3254.91
+Test RMSE: 3815.01
+Train R2 Score: 0.7441
+Test R2 Score: 0.6543
+
+Feature Importance:
+  hour: 0.5230
+  month: 0.3697
+  dayofweek: 0.0555
+  is_weekend: 0.0432
+  is_peak_hour: 0.0085
+
+ANOMALY SUMMARY
+==================================================
+Total Records: 145,362
+Anomalies Detected: 11,040 (7.59%)
+Estimated Wastage: 98,096,079.40
+Estimated Cost: $11,771,529,527.67
+Annual Savings Potential: $709,245,341.30
+Residual Flagged: 7,269
+Residual Threshold: 6949.61

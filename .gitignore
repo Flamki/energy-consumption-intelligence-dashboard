@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local logs
+streamlit_out.log
+streamlit_err.log
+*.log
+
+# Keep generated outputs for demo/deploy, but ignore temp files in outputs
+outputs/**/*.tmp

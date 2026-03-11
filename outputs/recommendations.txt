@@ -1,0 +1,8 @@
+OPTIMIZATION RECOMMENDATIONS
+========================================
+
+1. 3,154 anomalies occurred in peak hours. Shift flexible loads outside 17:00-21:00.
+2. 2,362 anomalies appeared on weekends. Audit idle equipment and HVAC schedules.
+3. 4,625 high-demand surges were detected. Add threshold alerts and staged load shedding.
+4. Estimated annual savings potential is $709,245,341.30 based on detected avoidable load.
+5. Review top anomalous timestamps weekly and track a reduction target month over month.

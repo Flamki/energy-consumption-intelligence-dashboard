@@ -1,0 +1,11 @@
+MODEL COMPARISON: RANDOM FOREST vs LSTM
+============================================================
+
+Metric          Random Forest        LSTM                
+------------------------------------------------------------
+MAE (MW)        3042.43              607.38              
+RMSE (MW)       3815.01              783.49              
+R2 Score        0.6543               0.9849              
+
+Date split used: True
+LSTM device: cuda
