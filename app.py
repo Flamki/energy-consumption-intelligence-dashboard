@@ -53,11 +53,20 @@ st.markdown(
     [data-testid="stSidebar"] {
         background: linear-gradient(180deg, #0f2f29 0%, #081b18 100%);
         border-right: 1px solid rgba(219, 248, 235, 0.18);
+        overflow-x: hidden !important;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
     }
 
     [data-testid="stSidebar"] * {
         color: #eef8f2 !important;
-        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    [data-testid="stSidebar"] [data-testid="stIconMaterial"] {
+        font-family: "Material Symbols Rounded", "Material Icons", sans-serif !important;
+        letter-spacing: normal !important;
+        white-space: nowrap !important;
     }
 
     [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
@@ -270,6 +279,18 @@ st.markdown(
         color: #1f2924 !important;
     }
 
+    [data-testid="stSidebar"] > div,
+    [data-testid="stSidebar"] section,
+    [data-testid="stSidebar"] [data-testid="stSidebarContent"] {
+        overflow-x: hidden !important;
+    }
+
+    [data-testid="stSidebar"] .block-container {
+        padding-left: 0.85rem !important;
+        padding-right: 0.85rem !important;
+        overflow-x: hidden !important;
+    }
+
     .stDataFrame, [data-testid="stImage"], [data-testid="stMetric"] {
         border-radius: 20px;
         overflow: hidden;
@@ -295,12 +316,15 @@ st.markdown(
     }
 
     .sidebar-card {
+        width: 100%;
+        max-width: 100%;
         padding: 0.95rem 1rem;
         border-radius: 18px;
         background: rgba(5, 35, 29, 0.72);
         border: 1px solid rgba(223, 249, 239, 0.24);
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
         margin-bottom: 0.8rem;
+        overflow: hidden;
     }
 
     .sidebar-card .sidebar-label {
@@ -318,6 +342,8 @@ st.markdown(
         font-weight: 700;
         color: #f7fff9 !important;
         text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
     .sidebar-card .sidebar-sub {
@@ -325,6 +351,8 @@ st.markdown(
         font-size: 0.9rem;
         color: #d4eee4 !important;
         font-weight: 600;
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
     .accuracy-board {
